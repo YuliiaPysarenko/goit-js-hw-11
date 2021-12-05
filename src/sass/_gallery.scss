@@ -1,0 +1,45 @@
+.gallery {
+    text-align: center;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.photo-card {
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    // height: 300px;
+    display: inline-block;
+    background-color: white;
+}
+
+.photo-card__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #303030;
+}
+
+.photo-card > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    max-height: 180px;
+    // height: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 80px;
+    font-size: 14px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.button__more {
+    margin: 30px auto;
+}

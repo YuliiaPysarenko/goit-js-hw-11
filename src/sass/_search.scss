@@ -1,0 +1,50 @@
+body {
+  background-image: radial-gradient( circle 588px at 50.7% 50.2%,  rgba(225,200,239,1) 33.4%, rgba(163,225,233,1) 89.1% );
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  color: #424242;
+  // radial-gradient(circle 588px at 50.7% 50.2%, #e1c8ef 33.4%, #a3e1e9 89.1%)
+}
+
+.container {
+  text-align: center;
+}
+
+.search-form {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  z-index: 20;
+  background-color: #dccdfb;
+  // min-height: 50px;
+  text-align: center;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.input {
+  height: 40px;
+  width: 300px;
+  padding: 0 10px;
+  margin-right: 10px;
+  border: 1px solid #b6a9d1;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline-color: #b6a9d1;
+}
+
+.button {
+  min-width: 100px;
+  height: 40px;
+  border: 1px solid #b6a9d1;
+  border-radius: 5px;
+  background-color: #d3b7fc;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #bea6e4;
+}
