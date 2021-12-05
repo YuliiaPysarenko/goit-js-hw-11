@@ -30,6 +30,8 @@ function renderImagesList(result) {
         return Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.")
     } else if (page === 1) {
         Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
+    } else if (page > totalPages) {
+        return Notiflix.Notify.warning("We're sorry, but you've reached the end of search results.")
     }
 
     createImagesList(hits);
@@ -39,10 +41,6 @@ function renderImagesList(result) {
     }
 
     page += 1;
-
-    if (page > totalPages) {
-        return Notiflix.Notify.warning("We're sorry, but you've reached the end of search results.")
-    }
 }
 
 function createImagesList(hits) {
@@ -78,7 +76,6 @@ function createImagesList(hits) {
 
 function scrolling () {
     const { height: cardHeight } = galleryRef.firstElementChild.getBoundingClientRect();
-    console.log(galleryRef.firstElementChild);
     
     window.scrollBy({
         top: cardHeight * 2,
